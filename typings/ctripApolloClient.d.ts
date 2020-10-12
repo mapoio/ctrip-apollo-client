@@ -9,7 +9,7 @@ interface Option {
     namespaceList?: StringArray
     logger?: object
 }
-export class value {
+export class Value {
     public value: string
 }
 export declare class CtripApplloClient {
@@ -26,4 +26,4 @@ export declare class CtripApplloClient {
 
 export function value(field: string, namespace?: string)
 export function withValue(target: any, key: string, field: string, namespace?: string)
-export function hotValue(field: string, namespace?: string): value
+export function hotValue(field: string, namespace?: string): Value

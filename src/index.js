@@ -170,6 +170,7 @@ class Client {
             }
         } catch (error) {
             if (+get(error, 'response.status') === 304) {
+                this.info('cache config is up to date')
                 return
             }
             this.error('pollingNotification error: ', error.message)
